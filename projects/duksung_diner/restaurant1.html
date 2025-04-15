@@ -4,20 +4,73 @@
   <meta charset="UTF-8">
   <title>홍콩반점</title>
   <link rel="stylesheet" href="style.css">
-  <style>main { text-align: center; } table { margin: 0 auto; }</style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    main {
+      text-align: center;
+      padding: 20px;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 80%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+    img {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    iframe {
+      margin-top: 20px;
+      border: none;
+      width: 90%;
+      max-width: 600px;
+      height: 300px;
+    }
+  </style>
 </head>
 <body>
-  <header><h1>홍콩반점</h1></header>
+  <header>
+    <h1>홍콩반점</h1>
+  </header>
+
   <main>
+    <!-- 대표 이미지 -->
+    <img src="media/hongkong.jpg" alt="홍콩반점 외관">
+
+    <!-- 정보 테이블 -->
     <table>
-      <tr><th>메뉴</th><td>짜장면, 짬뽕, 탕수육</td></tr>
-      <tr><th>가격</th><td>6,000 ~ 9,000원</td></tr>
+      <tr><th>주요 메뉴</th><td>짜장면, 짬뽕, 탕수육</td></tr>
+      <tr><th>가격대</th><td>6,000 ~ 9,000원</td></tr>
       <tr><th>주소</th><td>서울 도봉구 쌍문동 123</td></tr>
       <tr><th>운영시간</th><td>11:00 ~ 21:00</td></tr>
     </table>
-    <p><a href="https://map.naver.com/v5/search/홍콩반점" target="_blank">출처: 네이버 지도</a></p>
-    <iframe src="https://www.google.com/maps" width="400" height="300" style="border:0;"></iframe>
+
+    <!-- 출처 -->
+    <p>
+      👉 <a href="https://map.naver.com/v5/search/홍콩반점" target="_blank">출처: 네이버 지도</a>
+    </p>
+
+    <!-- 구글 지도 embed -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.965218065058!2d126.99554731548804!3d37.65140977978298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbd2a01f125b9%3A0xa7c1e1f5e1f5a567!2z7ZmU6rO17Yq567OE7Iuc!5e0!3m2!1sko!2skr!4v1680000000000"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
   </main>
-  <footer><p>&copy; 2025 박신영</p></footer>
+
+  <footer style="text-align: center; margin-top: 30px;">
+    <p>&copy; 2025 신윤</p>
+  </footer>
 </body>
 </html>
