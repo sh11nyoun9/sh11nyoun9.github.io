@@ -4,20 +4,31 @@
   <meta charset="UTF-8">
   <title>김밥천국</title>
   <link rel="stylesheet" href="style.css">
-  <style>main { text-align: center; } table { margin: 0 auto; }</style>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    main { text-align: center; padding: 20px; }
+    table { margin: 0 auto; border-collapse: collapse; width: 80%; }
+    th, td { border: 1px solid #ccc; padding: 10px; }
+    tr:hover { background-color: #f9f9f9; }
+    img { width: 300px; height: auto; margin-bottom: 20px; border-radius: 8px; }
+    iframe { margin-top: 20px; border: none; width: 90%; max-width: 600px; height: 300px; }
+  </style>
 </head>
 <body>
   <header><h1>김밥천국</h1></header>
   <main>
+    <img src="media/kimbap.jpg" alt="김밥천국">
     <table>
-      <tr><th>메뉴</th><td>김밥, 라면, 떡볶이</td></tr>
-      <tr><th>가격</th><td>3,000 ~ 6,000원</td></tr>
+      <tr><th>주요 메뉴</th><td>김밥, 라면, 떡볶이</td></tr>
+      <tr><th>가격대</th><td>3,000 ~ 6,000원</td></tr>
       <tr><th>주소</th><td>서울 도봉구 우이천로 456</td></tr>
-      <tr><th>운영시간</th><td>24시간</td></tr>
+      <tr><th>운영시간</th><td>24시간 운영</td></tr>
     </table>
     <p><a href="https://map.naver.com/v5/search/김밥천국" target="_blank">출처: 네이버 지도</a></p>
-    <iframe src="https://www.google.com/maps" width="400" height="300" style="border:0;"></iframe>
+    <iframe src="https://www.google.com/maps" allowfullscreen="" loading="lazy"></iframe>
   </main>
-  <footer><p>&copy; 2025 신윤</p></footer>
+  <footer style="text-align: center; margin-top: 30px;">
+    <p>&copy; 2025 신윤</p>
+  </footer>
 </body>
 </html>
