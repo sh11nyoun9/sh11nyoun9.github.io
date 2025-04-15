@@ -1,9 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <title>정보 입력 폼</title>
+  <meta charset="UTF-8">
+  <title>덕성 맛집 설문</title>
+  <style>
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fefefe;
+    }
+    fieldset {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+  </style>
 </head>
 <body>
-  <h2>여기에 웹폼이 들어갈 예정입니다</h2>
+  <h1 style="text-align: center;">덕성 맛집 설문</h1>
+
+  <form onsubmit="submitForm(event)">
+    <fieldset>
+      <legend>기본 정보</legend>
+      <label for="name">이름</label>
+      <input type="text" id="name" name="name" placeholder="홍길동" required>
+
+      <label for="email">이메일</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+      <label for="food">좋아하는 음식</label>
+      <input list="foods" id="food" name="food" placeholder="예: 마라탕">
+      <datalist id="foods">
+        <option value="마라탕">
+        <option value="초밥">
+        <option value="돈까스">
+        <option value="김밥">
+        <option value="떡볶이">
+      </datalist>
+    </fieldset>
+
+    <fieldset>
+      <legend>방문 경험</legend>
+      <label>이 사이트를 알게 된 경로</label>
+      <input type="checkbox" name="source" value="친구 추천"> 친구 추천
+      <input type="checkbox" name="source" value="학교 포스터"> 학교 포스터
+      <input type="checkbox" name="source" value="SNS"> SNS
+
+      <label>방문 만족도</label>
+      <input type="radio" name="satisfaction" value="만족"> 만족
+      <input type="radio" name="satisfaction" value="보통"> 보통
+      <input type="radio" name="satisfaction" value="불만족"> 불만족
+
+      <label for="visit">방문 횟수</label>
+      <select id="visit" name="visit">
+        <option>1번</option>
+        <option>2~3번</option>
+        <option>4번 이상</option>
+      </select>
+
+      <label for="message">하고 싶은 말</label>
+      <textarea id="message" name="message" rows="4" placeholder="남기고 싶은 의견을 적어주세요"></textarea>
+    </fieldset>
+
+    <button type="submit">제출하기</button>
+  </form>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert("폼이 제출되었습니다! (구글 스프레드시트 연동은 다음 단계에서)");
+    }
+  </script>
 </body>
 </html>
