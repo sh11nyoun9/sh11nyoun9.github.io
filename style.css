@@ -136,3 +136,15 @@ nav a {
 .project-table tr:hover {
   background-color: #ddd;
 }
+
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  position: fixed; /* 꼬리말을 고정 위치에 배치 */
+  bottom: 0;      /* 꼬리말을 페이지 하단에 고정 */
+  width: 100%;     /* 꼬리말의 너비를 100%로 설정 */
+  box-sizing: border-box; /* padding이 너비에 포함되도록 함 */
+  border-top: 1px solid #ddd;
+  font-size: 0.8em;
+}
