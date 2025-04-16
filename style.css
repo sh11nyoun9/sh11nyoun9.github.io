@@ -146,3 +146,17 @@ nav a {
     padding-bottom: 60px;
     /* footer 높이만큼 padding */
 }
+
+footer {
+    background-color: #f0f0f0;
+    padding: 8px 10px; /* 위아래 padding 줄임 */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    font-size: 0.75em; /* 폰트 크기 줄임 */
+    position: fixed;
+    bottom: 0;
+    height: auto; /* height 삭제 또는 auto로 설정 */
+    line-height: 1.2; /* 줄 간격 조절 */
+}
