@@ -1,61 +1,111 @@
 <!DOCTYPE html>
+<!-- HTML5 문서임을 선언 (반드시 제일 위에 위치) -->
+
 <html>
   <head>
+    <!-- 페이지 기본 정보와 설정 -->
     <meta charset="utf-8">
+    <!-- 한글 등 다양한 문자를 깨짐 없이 표시하기 위한 문자 인코딩 설정 -->
+
     <title>
       Portfolio of Park ShinYoung
     </title>
+    <!-- 브라우저 탭에 표시될 제목 -->
+
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- 외부 CSS 파일 연결 (디자인은 style.css에서 설정) -->
   </head>
+
   <body>
-    <header><h1>박신영의 포트폴리오</h1></header>
+    <!-- 실제 화면에 보여지는 부분 시작 -->
+
+    <!-- ========== 상단 헤더 영역 ========== -->
+    <header>
+      <h1>박신영의 포트폴리오</h1>
+      <!-- 메인 제목, 가장 눈에 띄는 부분 -->
+    </header>
+
+    <!-- ========== 내비게이션 영역 ========== -->
     <nav>
+      <!-- 페이지 내 각 섹션으로 이동할 수 있는 링크 -->
       <a href="#overview">소개</a>
       <a href="#education">학력</a>
       <a href="#projects">프로젝트</a>
     </nav>
-    
+
+    <!-- ========== 본문 콘텐츠 영역 ========== -->
     <div class="content">
+
+      <!-- ===== 소개 섹션 ===== -->
       <section class="overview" id="overview">
+        <!-- id는 nav 메뉴와 연결됨 -->
+
         <img src="./media/profile-stitch.jpg" alt="프로필 이미지" class="profile-img">
+        <!-- 본인 프로필 사진 ⭐ 이미지 경로가 정확한지 확인 필요 -->
+
         <div class="contact">
           <h2>소개</h2>
+
           <div class="contact-item">
             <span class="label">e-mail:</span>
+            <!-- 이메일 클릭 시 새 탭에서 열리지만, 메일 앱 실행은 안 됨 ⭐ -->
+            <!-- 개선: href="mailto:shinyp0911@gmail.com" 사용 가능 -->
             <a href="shinyp0911@gmail.com" target="_blank"> shinyp0911@gmail.com</a>
           </div>
+
           <div class="contact-item">
             <span class="label">Github:</span>
             <a href="https://github.com/sh11nyoun9" target="_blank"> https://github.com/sh11nyoun9</a>
           </div>
         </div>
       </section>
-      
+
+      <!-- ===== 학력 섹션 ===== -->
       <section class="education" id="education">
         <h2>학력</h2>
         <ul>
+          <!-- 리스트로 학력 정보 작성 -->
           <li>덕성여자대학교 디지털소프트웨어공학부 2학년 재학</li>
         </ul>
       </section>
-      
+
+      <!-- ===== 프로젝트 섹션 ===== -->
       <section class="projects" id="projects">
         <h2>프로젝트</h2>
         <ol>
-          <li>덕성여자대학교 맛집 소개 프로젝트<br>
+          <li>
+            덕성여자대학교 맛집 소개 프로젝트<br>
+            <!-- 줄 바꿈을 위해 <br> 사용 -->
+
             : 덕성여자대학교 주변의 맛집 정보를 담은 웹 사이트 제작
+
             <div class="project-table-wrapper">
+              <!-- 표 스타일 정리를 위한 외부 div -->
+
               <table class="project-table">
                 <tr>
+                  <!-- 한 프로젝트에 대한 하나의 줄 -->
+
                   <td>
+                    <!-- 썸네일 이미지 클릭 시 실제 페이지로 이동 -->
                     <a href="https://sh11nyoun9.github.io/projects/duksung_diner/" target="_blank">
                       <img src="./media/profile-stitch.jpg" alt="프로젝트" />
+                      <!-- ⭐ 여기 이미지도 프로필 사진과 동일함 → 따로 프로젝트 이미지 사용하는 것이 보기 좋음 -->
                     </a>
                   </td>
+
                   <td>
-                    <a href="https://sh11nyoun9.github.io/projects/duksung_diner">구현된 웹 페이지에 대한 접속 링크</a>
+                    <!-- 구현된 페이지 바로가기 -->
+                    <a href="https://sh11nyoun9.github.io/projects/duksung_diner">
+                      구현된 웹 페이지에 대한 접속 링크
+                    </a>
                   </td>
+
                   <td>
-                    <a href="https://github.com/sh11nyoun9/sh11nyoun9.github.io/tree/main/projects/duksung_diner/">구현 코드를 올려놓은 깃허브 저장소 링크</a>
+                    <!-- 프로젝트 코드 저장소 -->
+                    <a href="https://github.com/sh11nyoun9/sh11nyoun9.github.io/tree/main/projects/duksung_diner/">
+                      구현 코드를 올려놓은 깃허브 저장소 링크
+                    </a>
                   </td>
                 </tr>
               </table>
@@ -64,9 +114,12 @@
         </ol>
       </section>
     </div>
-    
+
+    <!-- ========== 푸터 영역 ========== -->
     <footer>
       <p>박신영 shinyp0911@gmail.com 포트폴리오</p>
+      <!-- 사이트 하단에 간단한 정보 표시 -->
     </footer>
+
   </body>
 </html>
